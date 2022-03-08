@@ -1,25 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import React, {useEffect, useState} from 'react';
+import Pizza from './components/Pizza';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+  let [count,setcount] = useState(0);
+  let [pizza,setpizza] = useState(false);
+
+  const clickHandler = () => {
+    setcount(++count);
+    setpizza(!pizza)
+  }
+
+
+  return(
+    <>
+      <Button count={count} onClick={clickHandler} />
+      {pizza? <Pizza /> : null}
+    </>
+      )
+    }
+
+    const Button = (props) => {
+      // props = {count:0 , onClick:clickHandler}
+      return(
+        <>
+          <button onClick ={props.onClick}>🍔</button>
+          <span > clicked : {props.count}</span>
+        </>
+      )
+  
+
+
 }
 
 export default App;
