@@ -14,8 +14,9 @@ const App = () => {
 
   return(
     <>
-      <Button count={count} onClick={clickHandler} />
+      <Button count={count} onCligit config --global core.autocrlf trueck={clickHandler} />
       {pizza? <Pizza /> : null}
+      <Pizza/>
     </>
       )
     }
