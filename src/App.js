@@ -1,6 +1,7 @@
 import './App.css';
 import React, {useEffect, useState} from 'react';
 import Pizza from './components/Pizza';
+import Special from './components/Special';
 
 const App = () => {
   let [count,setcount] = useState(0);
@@ -15,9 +16,12 @@ const App = () => {
 
   return(
     <>
-      <Button count={count} onCligit config --global core.autocrlf trueck={clickHandler} />
+      <Button count={count} onClick={clickHandler} />
       {pizza? <Pizza /> : null}
       <Pizza/>
+
+      <Pizza/>
+      <Special/>
     </>
       )
     }
