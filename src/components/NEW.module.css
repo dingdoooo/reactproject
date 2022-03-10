@@ -1,0 +1,31 @@
+.new {
+  text-align: center;
+  padding: 0px 10px;
+
+}
+.new img {
+  width : 100%;
+  margin-bottom: 10px;
+  
+}
+
+.All{
+  text-align: center;
+}
+
+.pizza__description {
+  margin-bottom: 10px;
+  color: rgb(196, 166, 166);
+}
+.pizza__price {
+  font-size: 1.1rem;
+}
+
+.pizza__large{
+  margin-bottom: 10px;
+}
+
+.pizza__name {
+  margin-bottom: 10px;
+
+}
