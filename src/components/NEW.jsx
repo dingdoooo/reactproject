@@ -1,7 +1,7 @@
 import React from 'react'
 import classes from './NEW.module.css'
 
-const Premium = (props) => {
+const NEW = (props) => {
   return (
     <li className={classes.new}>
 
@@ -28,4 +28,4 @@ const Premium = (props) => {
   )
 }
 
-export default Premium
+export default NEW
