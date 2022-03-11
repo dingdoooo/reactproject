@@ -20,8 +20,12 @@ const CartProvider = (props) => {
 
     // 이미 동일한 id 값의 book이 cart에 존재할 경우, 해당 book의 amount만 추가한다.
     // item :Add할때 올려보낸,, id와 현재 cart에 들어있는 id를 비교하기 위함
+
+
+    
+    //**  price까지 비교를해야 Large와 Medium을 구분할 수 있습니다~!~!
     const existingCartItemIndex = cartState.items.findIndex(
-      (cartItem) => cartItem.id === item.id
+      (cartItem) => cartItem.id === item.id && cartItem.price === item.price
     )
 
     // Add를 통해 등록한 책이 cart에 존재한다면, existingCartIemIndex에 입력되어있다.

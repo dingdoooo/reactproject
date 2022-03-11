@@ -1,14 +1,14 @@
 .header{
-  padding : 0 10%;
-
+  padding : 0 7%;
+  font-family: 'nanumsquare';
+  font-weight: bold;  
   background-color: #0a3d62;
   color: white;
-
+  justify-content: space-between;
   display: flex;
   /* justify-content: center 중앙정렬 
      justify-content: space-between,, ?
   */
-  justify-content: space-between; 
   align-items: center;
 }
 
@@ -16,4 +16,12 @@
   width: 20%;
   height: 80%;
   margin-bottom: 5px;
+}
+
+.Account{
+  align-items: center;
+  display: flex;
+}
+.Account div{
+  margin-right: 30px;
 }

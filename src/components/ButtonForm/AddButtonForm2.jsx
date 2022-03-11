@@ -17,14 +17,14 @@ const AddButtonForm2 = (props) => {
     const amountValueToNumber2 = parseInt(amountValue2);
     console.log(amountValueToNumber2);
 
-    {props.onAddToCart(amountValueToNumber2)}
+    {props.onAddToCart(amountValueToNumber2, 'Medium')}
 
   }
 
   return (
     <form className={classes.form}>
       <Input ref={inputRef} input={ {id :id, type:'number', defaultValue : '1'} }/>
-      <Button2 type="submit" onClick ={submitHandler}>Add</Button2>
+      <Button2 size ={'Medium'} type="submit" onClick ={submitHandler}>Add</Button2>
     </form>
   )
 }
