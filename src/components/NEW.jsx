@@ -42,7 +42,6 @@ const NEW = (props) => {
 
 
       <div className={classes.pizza__img}>
-
         <img src={props.src} />
       </div>
 

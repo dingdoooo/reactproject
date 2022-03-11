@@ -58,13 +58,13 @@ const Premium = (props) => {
 
         <div className={classes.pizza__price}>
           <div className={classes.pizza__large} > 🍕 Large : {props.Lprice.toLocaleString()}~</div>
-          <AddButtonForm size={'Large'} onAddToCart={addItemToCartHandler} />
+          <AddButtonForm size ={'Large'} onAddToCart={addItemToCartHandler} />
         </div>
 
 
         <div className={classes.pizza__price}>
           <div className={classes.pizza__medium} > 🌭 Medium : {props.Mprice.toLocaleString()}~</div>
-          <AddButtonForm2 size={'Medium'} onAddToCart={addItemToCartHandler2} />
+          <AddButtonForm2 size ={'Medium'} onAddToCart={addItemToCartHandler2} />
         </div>
 
       </div>
