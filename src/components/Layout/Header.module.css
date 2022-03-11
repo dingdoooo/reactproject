@@ -1,0 +1,19 @@
+.header{
+  padding : 0 10%;
+
+  background-color: #0a3d62;
+  color: white;
+
+  display: flex;
+  /* justify-content: center 중앙정렬 
+     justify-content: space-between,, ?
+  */
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.header img{
+  width: 20%;
+  height: 80%;
+  margin-bottom: 5px;
+}

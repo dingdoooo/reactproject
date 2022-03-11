@@ -1,0 +1,22 @@
+.input {
+/*  border: 2px dashed springgreen; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* margin-bottom: 0.5rem; Add button과 떨어뜨리기 위함 */
+}
+
+.input label {
+  /* Amount 와 input을 떨어뜨리고, 글씨체 굵게 변경*/
+  font-weight: bold;
+  /* margin-right: 1rem */
+}
+
+.input input {
+  width: 1.5rem; /* input box 작게 만들기 */
+  border-radius: 3px;
+  border: 1px solid #ccc; /*input box 색깔 연하게*/
+  padding-left: 1rem; /* 숫자 위치 중간으로 */
+  margin-right: 10px;
+  text-align: center;
+  
+}

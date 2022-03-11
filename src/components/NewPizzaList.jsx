@@ -5,7 +5,7 @@ import classes from './NewPizzaList.module.css'
 
 const NEWPIZZA = [
   {
-    id: "pizza1",
+    id: "newpizza1",
     name: "아메리칸 패티 멜트",
     description:
       "#그릴드 직화 패티+치즈 멜트의 운명적 맛남!",
@@ -15,7 +15,7 @@ const NEWPIZZA = [
 
   },
   {
-    id: "pizza2",
+    id: "newpizza2",
     name: "아메리칸 패티 멜트+블랙앵거스 더블치즈엣지",
     description:
       "#패티 멜트와 스테이크의 육즙 가득한 만남!!",
@@ -24,7 +24,7 @@ const NEWPIZZA = [
     src : require("../images/newpizza2.jpg")
   },    
   {
-    id: "pizza3",
+    id: "newpizza3",
     name: "아메리칸 패티 멜트+뉴욕 오리진 더블치즈엣지",
     description:
       "#아메리칸 패티 멜트와 미국 피자 오리진의 만남!",
@@ -38,11 +38,12 @@ const NEWPIZZA = [
 const NewPizzaList = () => {
 
     const [newPizza, setNewPizza] = useState(NEWPIZZA);
-    console.log(newPizza);
+    // console.log(newPizza);
 
     const newPizzaList = newPizza.map((pizza) => 
       <NEW
         key = {pizza.id}
+        id = {pizza.id}
         name = {pizza.name}
         description = {pizza.description}
         Lprice = {pizza.Lprice}
@@ -50,7 +51,7 @@ const NewPizzaList = () => {
         src = {pizza.src}
         />
     )
-    console.log(newPizzaList);
+    // console.log(newPizzaList);
 
     return(
       <section className={classes.pizza}>
