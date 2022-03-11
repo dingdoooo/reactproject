@@ -8,7 +8,7 @@ import CartContext from '../store/CartContext'
 const Premium = (props) => {
 
   const cartContext = useContext(CartContext);
-
+  
   const addItemToCartHandler = (amount, size) => {
 
     const pizza = {
@@ -17,14 +17,12 @@ const Premium = (props) => {
       amount: amount,
       price: props.Lprice,
       description: props.description,
-      size : size
+      size: size
     }
-
     cartContext.addItem(pizza);
-
   }
 
-  
+
   const addItemToCartHandler2 = (amount, size) => {
 
     const pizza2 = {
@@ -33,7 +31,7 @@ const Premium = (props) => {
       amount: amount,
       price: props.Mprice,
       description: props.description,
-      size : size
+      size: size
     }
 
     cartContext.addItem(pizza2);
@@ -60,13 +58,13 @@ const Premium = (props) => {
 
         <div className={classes.pizza__price}>
           <div className={classes.pizza__large} > 🍕 Large : {props.Lprice.toLocaleString()}~</div>
-          <AddButtonForm size ={'Large'} onAddToCart={addItemToCartHandler} />
+          <AddButtonForm size={'Large'} onAddToCart={addItemToCartHandler} />
         </div>
 
 
         <div className={classes.pizza__price}>
           <div className={classes.pizza__medium} > 🌭 Medium : {props.Mprice.toLocaleString()}~</div>
-          <AddButtonForm2 size ={'Medium'} onAddToCart={addItemToCartHandler2} />
+          <AddButtonForm2 size={'Medium'} onAddToCart={addItemToCartHandler2} />
         </div>
 
       </div>

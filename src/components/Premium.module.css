@@ -1,15 +1,14 @@
 .new {
   text-align: center;
   padding: 0px 10px;
-
 }
+
 .new img {
-  width : 100%;
+  width: 100%;
   margin-bottom: 10px;
-  
 }
 
-.All{
+.All {
   text-align: center;
 }
 
@@ -17,27 +16,24 @@
   margin-bottom: 10px;
   color: rgb(196, 166, 166);
 }
+
 .pizza__price {
   font-size: 1.1rem;
   display: flex;
-  /* border: 2px solid blue;  */
-  justify-content: space-between; /*!!!!!!!!!!!!!!!!!!야호!!!!!*/
+  justify-content: space-between;
   padding-bottom: 10px;
 }
 
-.pizza__price AddButtonForm{
+.pizza__price AddButtonForm {
   align-items: center;
 }
 
 .pizza__large {
-  /* margin-bottom: 10px; */
-  /* border : 3px dashed black; */
   margin-left: 20px;
 }
 
 .pizza__medium {
   margin-left: 15px;
-  /* margin-bottom: 10px; */
 }
 
 .pizza__name {

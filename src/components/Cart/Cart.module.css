@@ -16,25 +16,26 @@
 }
 
 .buttons {
-    text-align: right;
-    margin-right: 30px;
-    margin-bottom: 10px;
-    margin-left: 30px;
+  text-align: right;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  margin-left: 30px;
 }
-.buttons total{
+
+.buttons total {
   display: flex;
 }
 
 .buttons button {
-    margin: 0 0.25rem;
+  margin: 0 0.25rem;
 }
 
 .buttons button:first-child {
-    background-color: rgb(212, 103, 103);
-    color: white;
+  background-color: rgb(212, 103, 103);
+  color: white;
 }
 
-.content{
+.content {
   box-sizing: border-box;
   font-family: 'nanumsquare';
   font-weight: bold;

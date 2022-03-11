@@ -5,7 +5,6 @@ import Header from './components/Layout/Header'
 import Footer from './components/Layout/Footer';
 import CartProvider from './store/CartProvider';
 import Cart from './components/Cart/Cart';
-import Login from './components/Login/Login';
 
 
 const App = () => {
@@ -15,7 +14,6 @@ const App = () => {
   const [LoginIsShown, LoginsetCartIsShown] = useState(false);
 
   const openCartHandler = () => {
-    console.log("openCartHandler called!!");
     setCartIsShown(true);
     LoginsetCartIsShown(true);
   }
@@ -25,31 +23,15 @@ const App = () => {
     LoginsetCartIsShown(false)
   }
 
-  const openLoginHandler = () => {
-    console.log("openCartHandler called!!");
-    LoginsetCartIsShown(true);
-  }
-  
-  const closeLoginHandler = () => {
-    LoginsetCartIsShown(false)
-  }
 
   return(
     <CartProvider>
-      {/* CartIsShown = true이면,  */}
-      {LoginIsShown && <Login onClose={closeCartHandler}/>}
       {CartIsShown && <Cart onClose={closeCartHandler}/>}
       <Header onOpen = {openCartHandler}/>
-
         <Pizza/>
       <Footer/> 
     </CartProvider>
       )
     }
-
- 
-  
-
-
 
 export default App;

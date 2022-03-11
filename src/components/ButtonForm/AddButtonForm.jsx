@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
-import _uniqueId  from 'lodash/uniqueId'
+import _uniqueId from 'lodash/uniqueId'
 import Button from '../Commons/Button'
-import classes from './AddPizzaForm.module.css'
+import classes from './AddButtonForm.module.css'
 import Input from '../Commons/Input'
 
 const AddButtonForm = (props) => {
@@ -16,16 +16,15 @@ const AddButtonForm = (props) => {
 
     const amountValue = inputRef.current.value;
     const amountValueToNumber = parseInt(amountValue);
-    console.log(amountValueToNumber);
 
-    {props.onAddToCart(amountValueToNumber,"Large")}
+    { props.onAddToCart(amountValueToNumber, "Large") }
 
   }
 
   return (
     <form className={classes.form}>
-    <Input ref={inputRef} input={ {id :id, type:'number', defaultValue : '1'} }/>
-    <Button type="submit" onClick ={submitHandler}>Add</Button>
+      <Input ref={inputRef} input={{ id: id, type: 'number', defaultValue: '1' }} />
+      <Button type="submit" onClick={submitHandler}>Add</Button>
     </form>
   )
 }

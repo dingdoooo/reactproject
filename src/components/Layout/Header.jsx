@@ -1,26 +1,41 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import classes from './Header.module.css'
 import HeaderCart from './HeaderCart'
 import logo from '../../images/logo.png'
+import './HeaderNav.css'
 
 const Header = (props) => {
-  // HeaderCart의 부모 = Header, Header의 부모 = App
-  // props.onOpen = {openCartHandler}
+
+  const [show, handleShow] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        handleShow(true);
+      } else handleShow(false);
+    });
+    return () => {
+      window.removeEventListener('scroll');
+    };
+  }, []);
+
   return (
     <>
-      <header className={classes.header}> 
-        <div className={classes.logo}>
-          <img src = {logo}></img>
-        </div>
+      <div className={`header_nav ${show && "headernav__blue"}`}>
 
-        <div className={classes.Account}>
-          <div> LOGIN </div>
-          <div> JOIN </div>
-          <HeaderCart className={classes.HeaderCart} onOpen ={props.onOpen}/>
-        </div>
+        <header className={classes.header}>
+          <div className={classes.logo}>
+            <img src={logo}></img>
+          </div>
 
-      </header>
-    
+          <div className={classes.Account}>
+            <div> LOGIN </div>
+            <div> JOIN </div>
+            <HeaderCart className={classes.HeaderCart} onOpen={props.onOpen} />
+          </div>
+        </header>
+      </div>
+
     </>
 
   )

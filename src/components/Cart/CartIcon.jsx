@@ -1,7 +1,6 @@
 import React from 'react'
 
 const CartIcon = () => {
-  // svg icon 사용하기
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
