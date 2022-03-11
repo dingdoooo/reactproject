@@ -20,7 +20,7 @@ const Cart = (props) => {
         <CartItem
           key = {pizza.id}
           name={pizza.name}
-          price={pizza.price}
+          price={pizza.price.toLocaleString()}
           amount={pizza.amount}
           size ={pizza.size}
         />
@@ -29,7 +29,7 @@ const Cart = (props) => {
     </ul>
   )
 
-  const totalAmount = `${cartContext.totalAmount.toFixed(0)}`
+  const totalAmount = `${cartContext.totalAmount.toLocaleString()}`
 
   const cartItemsTotal = (
     <div className={classes.buttons}>

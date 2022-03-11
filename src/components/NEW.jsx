@@ -38,12 +38,18 @@ const NEW = (props) => {
 
   }
 
+  const openPizzaDetail = () => {
+
+  }
+
 
   return (
     <li className={classes.new}>
 
+
       <div className={classes.pizza__img}>
-        <img src={props.src} />
+        <a href="pizzaDetail.html" ><img src={props.src}/> </a>
+        {/* <img onClick={openPizzaDetail} src={props.src} /> */}
       </div>
 
       <div className={classes.All}>
@@ -60,7 +66,7 @@ const NEW = (props) => {
         {/* 피자 L 가격  */}
         <div className={classes.pizza__price}>
 
-          <div className={classes.pizza__large} > 🍕 Large : {props.Lprice} ~
+          <div className={classes.pizza__large} > 🍕 Large : {props.Lprice.toLocaleString()} ~
           </div>
           
           <AddButtonForm onAddToCart={addItemToCartHandler} />
@@ -68,7 +74,7 @@ const NEW = (props) => {
 
         {/* 피자 M 가격 */}
         <div className={classes.pizza__price}>
-          <div className={classes.pizza__medium}> 🌭 Medium : {props.Mprice} ~
+          <div className={classes.pizza__medium}> 🌭 Medium : {props.Mprice.toLocaleString()} ~
           </div>
           <AddButtonForm2 onAddToCart={addItemToCartHandler2} />
         </div>
