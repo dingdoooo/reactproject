@@ -11,13 +11,17 @@
   margin: 0 0 0.5rem 0;
   color: black;
   font-size: 20px;
+  padding-left: 20px;
+  
 }
 
 .summary {
-  width: 10rem;
+  width: 15rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  padding-right: 30px;
+
 }
 
 .price {

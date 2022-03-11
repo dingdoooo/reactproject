@@ -9,7 +9,7 @@ const Premium = (props) => {
 
   const cartContext = useContext(CartContext);
 
-  const addItemToCartHandler = (amount) => {
+  const addItemToCartHandler = (amount, size) => {
 
     const pizza = {
       id: props.id,
@@ -17,6 +17,7 @@ const Premium = (props) => {
       amount: amount,
       price: props.Lprice,
       description: props.description,
+      size : size
     }
 
     cartContext.addItem(pizza);
@@ -24,7 +25,7 @@ const Premium = (props) => {
   }
 
   
-  const addItemToCartHandler2 = (amount) => {
+  const addItemToCartHandler2 = (amount, size) => {
 
     const pizza2 = {
       id: props.id,
@@ -32,6 +33,7 @@ const Premium = (props) => {
       amount: amount,
       price: props.Mprice,
       description: props.description,
+      size : size
     }
 
     cartContext.addItem(pizza2);
@@ -57,14 +59,14 @@ const Premium = (props) => {
 
 
         <div className={classes.pizza__price}>
-          <div className={classes.pizza__large}> 🍕 Large : {props.Lprice}~</div>
-          <AddButtonForm onAddToCart={addItemToCartHandler} />
+          <div className={classes.pizza__large} > 🍕 Large : {props.Lprice}~</div>
+          <AddButtonForm size ={'Large'} onAddToCart={addItemToCartHandler} />
         </div>
 
 
         <div className={classes.pizza__price}>
-          <div className={classes.pizza__medium}> 🌭 Medium : {props.Mprice}~</div>
-          <AddButtonForm2 onAddToCart={addItemToCartHandler2} />
+          <div className={classes.pizza__medium} > 🌭 Medium : {props.Mprice}~</div>
+          <AddButtonForm2 size ={'Medium'} onAddToCart={addItemToCartHandler2} />
         </div>
 
       </div>

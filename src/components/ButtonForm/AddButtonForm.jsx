@@ -18,7 +18,7 @@ const AddButtonForm = (props) => {
     const amountValueToNumber = parseInt(amountValue);
     console.log(amountValueToNumber);
 
-    {props.onAddToCart(amountValueToNumber)}
+    {props.onAddToCart(amountValueToNumber,"Large")}
 
   }
 

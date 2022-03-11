@@ -3,12 +3,12 @@ import classes from './CartItem.module.css'
 
 /*
 <CartItem
-  key = {book.id}
-  name={book.name}
-  Lprice={book.Lprice}
-  Mprice={book.Mprice}
-  amount={book.amount}
-  /> 을 props로 내려받는다.
+  key={pizza.id}
+  name={pizza.name}
+  price={pizza.price}
+  amount={pizza.amount}
+  size ={pizza.size}
+/> 을 props로 내려받는다.
 */
 
 const CartItem = (props) => {
@@ -18,8 +18,9 @@ const CartItem = (props) => {
     <li className={classes['cart-item']}>
       <h2>{props.name}</h2>
       <div className={classes.summary}>
-        <span className={classes.price}>{props.price}</span>
+        <span className={classes.size}> {props.size}  </span>
         <span className={classes.amount}> x {props.amount}</span>
+        <span className={classes.price}>{props.price}</span>
       </div>
 
     </li>

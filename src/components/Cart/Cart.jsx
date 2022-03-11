@@ -22,6 +22,7 @@ const Cart = (props) => {
           name={pizza.name}
           price={pizza.price}
           amount={pizza.amount}
+          size ={pizza.size}
         />
       ))}
 
@@ -50,8 +51,10 @@ const Cart = (props) => {
     <div className={classes.list}>주문 목록</div>
       <hr/>
       {cartItems}
+      <div className={classes.total}>
       {cartItemsTotal}
       {modalButton}
+      </div>
     </div>
   )
 

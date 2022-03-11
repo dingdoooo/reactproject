@@ -9,8 +9,16 @@ const Header = (props) => {
   return (
     <>
       <header className={classes.header}> 
-        <img src = {logo}></img>
-        <HeaderCart className={classes.HeaderCart} onOpen ={props.onOpen}/>
+        <div className={classes.logo}>
+          <img src = {logo}></img>
+        </div>
+
+        <div className={classes.Account}>
+          <div> LOGIN </div>
+          <div> JOIN </div>
+          <HeaderCart className={classes.HeaderCart} onOpen ={props.onOpen}/>
+        </div>
+
       </header>
     
     </>

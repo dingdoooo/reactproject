@@ -1,0 +1,39 @@
+.list_box{
+    margin: -20 30px;
+    display: inline-block;
+    position: relative;
+    width: 600px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.list_text{
+    font-size: 13px;
+    color: #888888;
+}
+
+.button{
+    display: inline-block;
+    position: relative;
+    width: 600px;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    padding-left: 20px;
+    width: 284px;
+    text-align: left;
+    height: 50px;
+    background: #222222;
+    color: #dddddd;
+    font-size: 14px;
+    line-height: 50px;
+    font-weight: 600;
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+}
+
+.button:hover {
+    background-color: grey;
+  }
