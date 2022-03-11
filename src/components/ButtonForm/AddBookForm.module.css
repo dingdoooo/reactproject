@@ -1,0 +1,8 @@
+.form{
+  text-align: right;
+  display: flex;
+  align-items: center;
+  /* border: 1px dashed red; */
+  float: right;
+
+}
