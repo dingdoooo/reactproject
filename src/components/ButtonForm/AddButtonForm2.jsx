@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import _uniqueId  from 'lodash/uniqueId'
 import Button2 from '../Commons/Button2'
-import classes from './AddBookForm2.module.css'
+import classes from './AddPizzaForm2.module.css'
 import Input from '../Commons/Input'
 
 const AddButtonForm2 = (props) => {
