@@ -16,14 +16,13 @@ const NEW = (props) => {
       amount: amount,
       price: props.Lprice,
       description: props.description,
-      size : size
+      size: size
     }
-    console.log(pizza);
     cartContext.addItem(pizza);
 
   }
 
-  const addItemToCartHandler2 = (amount2,size) => {
+  const addItemToCartHandler2 = (amount2, size) => {
 
     const pizza2 = {
       id: props.id,
@@ -31,48 +30,38 @@ const NEW = (props) => {
       amount: amount2,
       price: props.Mprice,
       description: props.description,
-      size : size
+      size: size
     }
 
     cartContext.addItem(pizza2);
 
   }
 
-  const openPizzaDetail = () => {
-
-  }
-
-
   return (
     <li className={classes.new}>
 
 
       <div className={classes.pizza__img}>
-        <a href="pizzaDetail.html" ><img src={props.src}/> </a>
-        {/* <img onClick={openPizzaDetail} src={props.src} /> */}
+        <img src={props.src} />
       </div>
 
       <div className={classes.All}>
-        {/* 피자 이름 */}
         <div className={classes.pizza__name}>
           {props.name}
         </div>
 
-        {/* 피자 설명 */}
         <div className={classes.pizza__description}>
           <div className={classes.description}>{props.description}</div>
         </div>
 
-        {/* 피자 L 가격  */}
         <div className={classes.pizza__price}>
 
           <div className={classes.pizza__large} > 🍕 Large : {props.Lprice.toLocaleString()} ~
           </div>
-          
+
           <AddButtonForm onAddToCart={addItemToCartHandler} />
         </div>
 
-        {/* 피자 M 가격 */}
         <div className={classes.pizza__price}>
           <div className={classes.pizza__medium}> 🌭 Medium : {props.Mprice.toLocaleString()} ~
           </div>

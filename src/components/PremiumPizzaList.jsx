@@ -46,11 +46,10 @@ const PREMIUMPIZZA = [
 const PremiumPizzaList = () => {
 
   const [premiumPizza, setPremiumPizza] = useState(PREMIUMPIZZA);
-  // console.log(premiumPizza);
 
   const premiumPizzaList = premiumPizza.map((pizza) =>
     <Premium
-      key = {pizza.id}
+      key={pizza.id}
       id={pizza.id}
       name={pizza.name}
       description={pizza.description}
@@ -74,32 +73,3 @@ const PremiumPizzaList = () => {
 
 export default PremiumPizzaList
 
-/* firebase를 이용하여 data를 가져오기까지는 ok, img 가져오기는 너무 힘들거같아서 따로 변경하지 않을것임
- 
-  useEffect(() => {
-    const fetchPremiumPizza = async() => {
-      const response = await fetch('https://reactpractice-a2d21-default-rtdb.firebaseio.com/PREMIUMPIZZA.json')
-      console.log(response.ok); // true : data를 url에서 잘 받아왔다
- 
-      const responseData = await response.json();
-      console.log(responseData);
- 
-      const pizzaData = [];
- 
-      for (const key in responseData){
-        pizzaData.push({
-          id : key,
-          name : responseData[key].name,
-          description : responseData[key].description,
-          Lprice : responseData[key].Lprice,
-          Mprice : responseData[key].Mprice,
-        })
-      }
-      console.log(pizzaData);
-      setPremiumPizza(pizzaData);
- 
-    }
-    fetchPremiumPizza().catch(error => console.log(error));
-    
-  },[]);
-*/

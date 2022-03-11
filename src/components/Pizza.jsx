@@ -1,16 +1,18 @@
 import React from 'react'
 import NewPizzaList from './NewPizzaList';
 import PremiumPizzaList from './PremiumPizzaList';
+import Banner from './Layout/Banner'
 
 
 const Pizza = () => {
 
   return (
     <>
-     <NewPizzaList/>
-     <PremiumPizzaList/>
+      <Banner />
+      <NewPizzaList />
+      <PremiumPizzaList />
     </>
   )
 }
 
-  export default Pizza
+export default Pizza

@@ -1,0 +1,38 @@
+.bannerbox {
+    font-family: 'nanumsquare';
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-top: 100px;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    z-index: 3;
+    background: #fff;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.banner_menu {
+    display: inline-block;
+    text-align: center;
+}
+
+.banner_coupon {
+    display: inline-block;
+    text-align: center;
+}
+
+.banner_gift {
+    display: inline-block;
+    text-align: center;
+}
+
+.banner_event {
+    display: inline-block;
+    text-align: center;
+}
+
+.banner_store {
+    display: inline-block;
+    text-align: center;
+}

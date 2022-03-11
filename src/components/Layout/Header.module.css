@@ -1,27 +1,40 @@
-.header{
-  padding : 0 7%;
+.header {
+  padding: 0 7%;
   font-family: 'nanumsquare';
-  font-weight: bold;  
+  font-weight: bold;
   background-color: #0a3d62;
   color: white;
   justify-content: space-between;
   display: flex;
-  /* justify-content: center 중앙정렬 
-     justify-content: space-between,, ?
-  */
   align-items: center;
 }
 
-.header img{
+.header img {
   width: 20%;
   height: 80%;
   margin-bottom: 5px;
 }
 
-.Account{
+.Account {
   align-items: center;
   display: flex;
 }
-.Account div{
+
+.Account div {
   margin-right: 30px;
+}
+
+.banner {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 29px 0 40px;
+  border-top: 1px solid #ddd;
+  background: #fff;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out;
 }

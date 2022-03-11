@@ -1,14 +1,12 @@
-.listbox{
+.listbox {
     margin: 0 100px;
     display: inline-block;
     position: relative;
-    width: 600px;
+    width: 700px;
     vertical-align: middle;
 }
 
-
-
-.listbox > dt {
+.warning {
     display: block;
     margin-inline-start: 40px;
     margin-top: 20px;
@@ -17,9 +15,16 @@
     color: #888888;
 }
 
-.listbox > dd {
+.content {
+    margin-inline-start: 0px;
     margin-top: 20px;
     font-size: 13px;
     color: #888888;
     line-height: 24px;
+}
+
+.listbox li {
+    list-style: none;
+    margin: 0;
+    margin-bottom: 10px;
 }

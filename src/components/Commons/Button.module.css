@@ -1,18 +1,16 @@
 .button {
-  border: 1px solid rgb(212, 103, 103);  /* Add 테두리 */
-  border-radius: 8px; /* Add의 테두리가 둥글둥글해짐 */
-  background-color: rgb(212, 103, 103); /* 테두리 안의 색깔 동일하게 */
-  color: white; /* Add 글자 하얀색으로 */
+  border: 1px solid rgb(212, 103, 103);
+  border-radius: 8px;
+  background-color: rgb(212, 103, 103);
+  color: white;
   font-weight: bold;
-  padding: 0.15rem 1rem; /* 상,하 = 0.25rem, 좌우 = 1rem*/
-  cursor: pointer; /* Add에 마우스 올렸을 때 포인터가 변경된다.*/
+  padding: 0.15rem 1rem;
+  cursor: pointer;
   margin-right: 10px;
 }
 
-/* 버튼위에 마우스를 올렸을 때 = hover ,버튼을 클릭했을 때 = active
-    button 색깔이 살짝 연해진다~ */
 .button:hover,
-.button:active{
+.button:active {
   background-color: rgb(219, 138, 138);
   border: 1px solid rgb(219, 138, 138);
 
